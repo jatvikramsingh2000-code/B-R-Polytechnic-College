@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | B.R. Polytechnic College</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">B.R. Polytechnic College</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="students.html">Students</a>
+          <a href="management.html">Management</a>
+          <a href="notices.html">Notices</a>
+          <a href="contact.html">Contact</a>
+          <a href="login.html" class="active">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow">Secure access</p>
+            <h2>Sign in to your college portal.</h2>
+            <p>Use this simple login page to access student and management resources.</p>
+          </div>
+          <form id="loginForm" class="contact-form">
+            <label>
+              Username
+              <input type="text" id="loginUser" placeholder="Enter username" required />
+            </label>
+            <label>
+              Password
+              <input type="password" id="loginPass" placeholder="Enter password" required />
+            </label>
+            <button type="submit">Sign In</button>
+            <p id="loginMessage" class="hero-text"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> B.R. Polytechnic College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

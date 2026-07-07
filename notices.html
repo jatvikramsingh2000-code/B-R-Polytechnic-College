@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notices | B.R. Polytechnic College</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">B.R. Polytechnic College</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="students.html">Students</a>
+          <a href="management.html">Management</a>
+          <a href="notices.html" class="active">Notices</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <p class="eyebrow">Latest notices</p>
+        <h2>Official updates for students and staff.</h2>
+
+        <div class="contact-card" style="margin-bottom: 1.2rem;">
+          <div>
+            <p class="eyebrow">Admin notice manager</p>
+            <h3>Add a new notice</h3>
+            <p>Use this quick form to add a new campus update.</p>
+          </div>
+          <form id="noticeForm" class="contact-form">
+            <label>
+              Title
+              <input id="noticeTitle" type="text" placeholder="Notice title" required />
+            </label>
+            <label>
+              Details
+              <textarea id="noticeDetail" rows="3" placeholder="Notice details" required></textarea>
+            </label>
+            <button type="submit">Publish Notice</button>
+          </form>
+        </div>
+
+        <div id="noticeList" class="notice-list">
+          <div class="notice-item">
+            <h3>Exam timetable released</h3>
+            <p>The semester exam timetable has been published for all departments.</p>
+          </div>
+          <div class="notice-item">
+            <h3>Campus event announcement</h3>
+            <p>A technical workshop will be held next week for all students.</p>
+          </div>
+          <div class="notice-item">
+            <h3>Fee submission reminder</h3>
+            <p>Please complete fee submission before the announced deadline.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> B.R. Polytechnic College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

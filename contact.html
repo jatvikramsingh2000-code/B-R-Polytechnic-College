@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | B.R. Polytechnic College</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a class="brand" href="index.html">B.R. Polytechnic College</a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="students.html">Students</a>
+          <a href="management.html">Management</a>
+          <a href="notices.html">Notices</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="contact-card">
+          <div class="contact-details">
+            <p class="eyebrow">Contact us</p>
+            <h2>Get in touch with the college office.</h2>
+            <p>Email: info@brpolytechnic.edu</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Address: Main Campus Road, City Name</p>
+          </div>
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> B.R. Polytechnic College. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
