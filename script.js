@@ -34,17 +34,28 @@ if (contactForm && !loginForm) {
   });
 }
 
+// Valid login credentials
+const validUsers = {
+  'student': 'student123',
+  'admin': 'admin123',
+  'principal': 'principal@123'
+};
+
 if (loginForm) {
   loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const username = document.getElementById('loginUser')?.value || '';
     const password = document.getElementById('loginPass')?.value || '';
 
-    if (username && password) {
-      loginMessage.textContent = `Welcome ${username}! You are now signed in.`;
-      loginMessage.style.color = '#0f4c81';
+    if (validUsers[username] && validUsers[username] === password) {
+      loginMessage.textContent = `✓ Welcome ${username}! You are now signed in.`;
+      loginMessage.style.color = '#16a34a';
+      document.getElementById('loginUser').value = '';
+      document.getElementById('loginPass').value = '';
+      // Uncomment below to redirect after login:
+      // setTimeout(() => { window.location.href = 'students.html'; }, 1500);
     } else {
-      loginMessage.textContent = 'Please enter both username and password.';
+      loginMessage.textContent = '✗ Invalid username or password.';
       loginMessage.style.color = '#b91c1c';
     }
   });
